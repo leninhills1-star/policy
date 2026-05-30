@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<body style="font-family:sans-serif;padding:40px;background:#0a0a0f;color:#e8e8f0">
+<h2>✅ TikTok 인증 완료!</h2>
+<p>아래 코드를 복사해서 웹앱 TikTok 코드 입력칸에 붙여넣으세요:</p>
+<div id="code" style="background:#1c1c26;padding:16px;border-radius:8px;word-break:break-all;font-family:monospace;margin:16px 0"></div>
+<script>
+const params = new URLSearchParams(window.location.search);
+const code = params.get('code');
+document.getElementById('code').textContent = code || '코드 없음';
+</script>
+</body>
+</html>
